@@ -1,0 +1,48 @@
+.cockpit{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 10px 15px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+}
+
+
+.sort-control {
+  width: 20%;
+  padding-right: 50px;
+}
+
+.sort-control p {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.search{
+  flex-grow: 1;
+  position: relative;
+}
+
+.search::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../../assets/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 15px;
+}
+
+.search input {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  padding: 0 45px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+}
